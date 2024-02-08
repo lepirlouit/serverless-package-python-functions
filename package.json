@@ -1,6 +1,6 @@
 {
   "name": "@lepirlouit/serverless-package-python-functions",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "description": "Serverless Framework plugin to package python functions and their requirements",
   "main": "index.js",
   "scripts": {},
