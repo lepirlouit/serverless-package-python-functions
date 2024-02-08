@@ -30,7 +30,7 @@ class PkgPyFuncs {
     this.globalIncludes = config.globalIncludes || []
     config.cleanup === undefined ? this.cleanup = true : this.cleanup = config.cleanup
     this.useDocker = config.useDocker || false
-    this.dockerImage = config.dockerImage || `lambci/lambda:build-${this.serverless.service.provider.runtime}`
+    this.dockerImage = config.dockerImage || `mlupin/docker-lambda:${this.serverless.service.provider.runtime}-build`
     this.containerName = config.containerName || 'serverless-package-python-functions'
     this.mountSSH = config.mountSSH || false
     this.abortOnPackagingErrors = config.abortOnPackagingErrors || false
